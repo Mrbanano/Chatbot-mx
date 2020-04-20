@@ -1,0 +1,26 @@
+{
+  "name": "chatbot-mx",
+  "version": "1.0.0",
+  "description": "is a chatbot for facebook",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrbanano/Chatbot-mx.git"
+  },
+  "keywords": [
+    "chatbot",
+    "facebook",
+    "demo",
+    "alvaro",
+    "castillo"
+  ],
+  "author": "Alvaro Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mrbanano/Chatbot-mx/issues"
+  },
+  "homepage": "https://github.com/Mrbanano/Chatbot-mx#readme"
+}
