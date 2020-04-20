@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 const actions = require("./services/actions")
-
+const handle = require('./services/handleMessage');
 
 const app = express();
 app.use(bodyParser.json());
@@ -36,7 +36,7 @@ app.post('/webhook',(req,res)=>{
         body.entry.forEach(function(entry){
             let webhookEvent = entry.messaging[0];
             console.log(webhookEvent);
-            actions.sendTextMessage("bienvenido al chatbot",webhookEvent);
+            handle.handleMessage(webhookEvent);
         });
     }else{
         send.status(404);
